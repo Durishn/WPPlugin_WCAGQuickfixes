@@ -3,9 +3,6 @@ This repository holds the code for WCAG Quickfixes, a Wordpress Plugin built to 
 
 Fixes that require site-specific targeting or elements (such as alt-text or landmarking) should be added within the respective WordPress Plugin Settings pages.
 
-* Author: Nic Durish
-theme which runs the City of Guelph municipal website. The theme was built as a child theme of the popular Twenty Twelve wordpress theme
-
 ## Installation
 Download the latest release of this theme and drop the zip into the `New Plugins` section of WordPress
 
