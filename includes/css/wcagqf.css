@@ -53,7 +53,7 @@
  */
 /* WP-ADMIN BAR*/
 #wpadminbar .screen-reader-shortcut {
-  color: black;
+  color: black !important;
 }
 
 /* A 2.4.1
