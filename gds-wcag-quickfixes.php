@@ -4,11 +4,11 @@
 * Description: General quickfixes for WCAG 2.0 (AA) errors that have been introduced to Guelph-based websites via commonly used plugins and themes. This plugin is the medicine that reduces the symptoms of problems affecting accessibility - it does not fix the ailments. Site-specific quickfixes are added through the Settings page.
 * Author: Nic Durish
 * Author URI: http://www.nicdurish.ca
-* Version: 1.0.0
+* Version: 1.0.1
 *
 * Copyright 2020 Nic Durish (nic.durish@guelph.ca)
 * @author Nic Durish
-* @version 1.0.0
+* @version 1.0.1
 */
 
 global $wp_version;

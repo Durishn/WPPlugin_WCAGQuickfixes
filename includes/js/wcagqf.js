@@ -68,13 +68,14 @@
   * No top-level heading on the page - Warning
   */
   if ($("h1").length == 0) {
-    $("<h1 class='visually-hidden'> "+ $("h2").text() + " </h1>").insertAfter( "#main-header");
+    $("<h1 class='visually-hidden' role='complementary' aria-label='hidden title'> "+ $("h2").text() + " </h1>").insertAfter( "#main-header");
   }
 
   /* A 1.3.1
   * Non-distinguishing landmark - Warning
   */
   /*Divi*/
+  $('article.page').attr('aria-label', 'Main Article');
   $('.page article.et_pb_post').each(function(){
     $(this).attr('aria-label', $(this).attr('id'));
   });
