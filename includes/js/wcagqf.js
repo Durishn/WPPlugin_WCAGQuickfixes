@@ -14,30 +14,65 @@
 
 (function ($) {
 
-  /* Classic unneccessary frameborders on iframes*/
-  $('iframe').removeAttr("frameborder");
-
-
-  /* A 1.1.1
-  * Non-text content has text alternative
+  /*****************************
+  **     Text Alternatives    **
+  ******************************/
+  /* A 1.1.1 - Error
+  * Image with no text alternative
   */
+  /* CHANGE IN CONTENT IF POSSIBLE */
   /*$('.header-content img').attr('alt', 'Guelph Cooperative Purchasing Group logo');*/
 
-  /* A 1.3.1
+  /*****************************
+  **        Adaptable         **
+  ******************************/
+  /* A 1.3.1 - Error
   * Element ID is not Unique
   */
   /*Divi*/
   $('#et-top-navigation #top-menu li').removeAttr("id");
 
+  /* A 1.3.1 - Error
+  * Input field has no description
+  */
+
+  /* A 1.3.1 - Error
+  * Label is not connected to a form control
+  */
+
+  /* A 1.3.1 - Error
+  * HTML is used to format content
+  */
+  $('iframe').removeAttr("frameborder");
+  $('img').removeAttr("align");
+
+
+  /* A 1.3.1 -Warning
+  * i used to format text
+  */
+  $('i').each(function() {
+    var outer = this.outerHTML;
+
+    // Replace opening tag
+    var regex = new RegExp('<' + this.tagName, 'i');
+    var newTag = outer.replace(regex, '<' + 'span');
+
+    // Replace closing tag
+    regex = new RegExp('</' + this.tagName, 'i');
+    newTag = newTag.replace(regex, '</' + 'span');
+
+    $(this).replaceWith(newTag);
+  });
+
   /* A 1.3.1
-  * No top-level heading on the page
+  * No top-level heading on the page - Warning
   */
   if ($("h1").length == 0) {
     $("<h1 class='visually-hidden'> "+ $("h2").text() + " </h1>").insertAfter( "#main-header");
   }
 
   /* A 1.3.1
-  * Non-distinguishing landmark
+  * Non-distinguishing landmark - Warning
   */
   /*Divi*/
   $('.page article.et_pb_post').each(function(){
@@ -45,7 +80,7 @@
   });
 
   /* A 1.3.1
-  * Content not included in landmarks
+  * Content not included in landmarks - Warning
   */
   $('div#top-header').attr('role', 'navigation');
   $('div#top-header').attr('aria-label', 'Top Header');
@@ -57,22 +92,61 @@
   $('.et_pb_scroll_top').attr('role', 'complementary');
   $('.et_pb_scroll_top').attr('aria-label', 'Scroll Arrow');
 
+  /*****************************
+  **      DISTINGUISHABLE     **
+  ******************************/
+  /* This section is mostly css*/
 
+  /*****************************
+  **         NAVIGABLE        **
+  ******************************/
   /* A 2.4.1
-  * No option to skip repeated content
-  */
+   * No option to skip repeated content
+   */
   /* $("<a role='navigation' aria-label='Skip to content' class='screenreader' href='#et-main-area' style='scroll-behavior: smooth; color: white !important;'>Skip to main content</a>").insertBefore( "#main-header"); */
 
+  /* A 2.4.4 - Error
+   * Link link is missing alternative text
+   */
+  /*CHANGE IN CONTENT IF POSSIBLE*/
+
+  /* A 2.4.4 - Error
+   * Link text is too generic in current context
+   */
+  /*CHANGE IN CONTENT IF POSSIBLE*/
+
   /* A 2.4.4
-  * Link text used for multiple different destinations
-  */
+   * Link text used for multiple different destinations
+   */
+  /*CHANGE IN CONTENT IF POSSIBLE*/
   /* WP-AdminBar */
   $('#wpadminbar').attr('aria-label', 'Wordpress admin bar');
 
-
+  /*****************************
+  **      INPUT ASSISTANCE    **
+  ******************************/
   /* A 3.2.2
-  Missing Button in form
-  */
+   * Missing Button in form
+   */
   /* $("<input class='visually-hidden' type='submit' value='Submit'>").insertAfter( ".et-search-field"); */
+
+  /* A 3.3.2 - Error
+   * Input field has no description
+   */
+
+  /*****************************
+  **        COMPATIBALE       **
+  ******************************/
+  /* A 4.1.2 - Error
+   * Input field has no description
+   */
+
+   /* A 4.1.2 - Error
+    * iFrame is missing a title
+    */
+
+    /* A 4.1.2 - Error
+     * Redundant WAI-ARIA attribute
+     */
 
 })(jQuery);
