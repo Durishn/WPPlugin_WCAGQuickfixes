@@ -1,0 +1,96 @@
+/**
+ * AODAfixes.css
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Summary: Quickfixes for WCAG errors.
+ * Author: Nic Durish <nic.durish@guelph.com>
+ * Author_URI: nicdurish.ca
+ * Date: 2020-03-17
+ *
+ * Copyright (c) 2020 Nic Durish
+ */
+
+/**************** CSS used for admin panel **************/
+.CodeMirror {
+    max-width: 98%;
+    border: 1px solid #ddd;
+    margin-right: 0 !important;
+}
+
+.CodeMirror div {
+    margin-right: 0 !important;
+}
+
+.CodeMirror .CodeMirror-gutters {
+    padding-left: 8px;
+}
+
+/**************** CSS used for public pages **************/
+
+/*Hidden visually but unlike `display:none` will show for screenreaders*/
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+}
+
+
+
+
+/* A 1.4.1
+ * Link identified only by color
+ */
+ p a {
+   text-decoration: underline;
+ }
+
+/* A 1.4.3
+ * Color contrast is insufficient
+ */
+/* WP-ADMIN BAR*/
+#wpadminbar .screen-reader-shortcut {
+  color: black;
+}
+
+/* A 2.4.1
+ * No option to skip repeated content
+ */
+ a.screenreader {
+     left:-999px;
+     position:absolute;
+     top:auto;
+     width:1px;
+     height:1px;
+     overflow:hidden;
+     z-index:-999;
+ }
+ a.screenreader:focus, a.screenreader:active {
+     color: #fff;
+     background-color:#000;
+     left: auto;
+     top: auto;
+     width: 30%;
+     height: auto;
+     overflow:auto;
+     margin: 10px 35%;
+     padding:5px;
+     border-radius: 15px;
+     border:4px solid yellow;
+     text-align:center;
+     font-size:1.2em;
+     z-index:999;
+ }
+
+/* A 2.4.7
+* Element not highlighted on focus
+*/
+/*:focus { outline: 1px solid lightblue;}*/
+
+/* A 3.3.2
+* Field labels not visible
+*/
+/*label{ display: block;}*/
