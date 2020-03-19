@@ -47,11 +47,16 @@
   /* A 1.3.1
   * Content not included in landmarks
   */
+  $('div#top-header').attr('role', 'navigation');
+  $('div#top-header').attr('aria-label', 'Top Header');
+  $('a.skip-link').attr('role', 'navigation');
+  $('a.skip-link').attr('aria-label', 'Skip to Content');
   /*Divi*/
   $('.et_pb_side_nav').attr('role', 'navigation');
   $('.et_pb_side_nav').attr('aria-label', 'Quick Navigator');
   $('.et_pb_scroll_top').attr('role', 'complementary');
   $('.et_pb_scroll_top').attr('aria-label', 'Scroll Arrow');
+
 
   /* A 2.4.1
   * No option to skip repeated content
