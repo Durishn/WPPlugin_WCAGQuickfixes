@@ -107,17 +107,17 @@
 
   /* A 2.4.4 - Error
    * Link link is missing alternative text
-   */
+  */
   /*CHANGE IN CONTENT IF POSSIBLE*/
 
   /* A 2.4.4 - Error
-   * Link text is too generic in current context
-   */
+  * Link text is too generic in current context
+  */
   /*CHANGE IN CONTENT IF POSSIBLE*/
 
   /* A 2.4.4
-   * Link text used for multiple different destinations
-   */
+  * Link text used for multiple different destinations
+  */
   /*CHANGE IN CONTENT IF POSSIBLE*/
   /* WP-AdminBar */
   $('#wpadminbar').attr('aria-label', 'Wordpress admin bar');
@@ -126,27 +126,27 @@
   **      INPUT ASSISTANCE    **
   ******************************/
   /* A 3.2.2
-   * Missing Button in form
-   */
+  * Missing Button in form
+  */
   /* $("<input class='visually-hidden' type='submit' value='Submit'>").insertAfter( ".et-search-field"); */
 
   /* A 3.3.2 - Error
-   * Input field has no description
-   */
+  * Input field has no description
+  */
 
   /*****************************
   **        COMPATIBALE       **
   ******************************/
   /* A 4.1.2 - Error
-   * Input field has no description
-   */
+  * Input field has no description
+  */
 
-   /* A 4.1.2 - Error
-    * iFrame is missing a title
-    */
+  /* A 4.1.2 - Error
+  * iFrame is missing a title
+  */
 
-    /* A 4.1.2 - Error
-     * Redundant WAI-ARIA attribute
-     */
+  /* A 4.1.2 - Error
+  * Redundant WAI-ARIA attribute
+  */
 
 })(jQuery);
