@@ -21,7 +21,13 @@
   * Image with no text alternative
   */
   /* CHANGE IN CONTENT IF POSSIBLE */
-  /*$('.header-content img').attr('alt', 'Guelph Cooperative Purchasing Group logo');*/
+  /*$('').attr('alt', '');*/
+
+  /* A 1.1.1 - Warning
+  * Image alternatives don't match (has alt and aria)
+  */
+  /* CHANGE IN CONTENT IF POSSIBLE */
+  /* $('').removeAttr('aria-labelledby'); */
 
   /*****************************
   **        Adaptable         **

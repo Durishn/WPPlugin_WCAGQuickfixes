@@ -43,4 +43,4 @@ function nd_adding_scripts_styles() {
   wp_enqueue_script('JSfixes');
   wp_enqueue_style( 'CSSfixes', plugins_url( 'includes/css/wcagqf.css', __FILE__ ), '', '1.0' );
 }
-add_action( 'wp_enqueue_scripts', 'nd_adding_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'nd_adding_scripts_styles', 98);
