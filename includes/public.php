@@ -97,7 +97,7 @@ function wcagqf_register_script() {
 	);
 	wp_enqueue_script( 'wcagqf_script' );
 }
-add_action( 'wp_enqueue_scripts', 'wcagqf_register_script', 95 );
+add_action( 'wp_enqueue_scripts', 'wcagqf_register_script', 99 );
 
 /**
  * If the query var is set, print the JS rules

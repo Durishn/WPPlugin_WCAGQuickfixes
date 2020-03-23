@@ -21,13 +21,7 @@
   * Image with no text alternative
   */
   /* CHANGE IN CONTENT IF POSSIBLE */
-  /*$('').attr('alt', '');*/
-
-  /* A 1.1.1 - Warning
-  * Image alternatives don't match (has alt and aria)
-  */
-  /* CHANGE IN CONTENT IF POSSIBLE */
-  /* $('').removeAttr('aria-labelledby'); */
+  /*$('.header-content img').attr('alt', 'Guelph Cooperative Purchasing Group logo');*/
 
   /*****************************
   **        Adaptable         **
@@ -82,17 +76,18 @@
   */
   /*Divi*/
   $('article.page').attr('aria-label', 'Main Article');
-  $('.page article.et_pb_post').each(function(){
+  $('article.et_pb_post').each(function(){
     $(this).attr('aria-label', $(this).attr('id'));
   });
+  $('#main-header .et-search-form').attr('aria-label', 'Main Search');
+  $('#sidebar .et-search-form').attr('aria-label', 'Sidebar Search');
+
 
   /* A 1.3.1
   * Content not included in landmarks - Warning
   */
   $('div#top-header').attr('role', 'navigation');
   $('div#top-header').attr('aria-label', 'Top Header');
-  $('a.skip-link').attr('role', 'navigation');
-  $('a.skip-link').attr('aria-label', 'Skip to Content');
   /*Divi*/
   $('.et_pb_side_nav').attr('role', 'navigation');
   $('.et_pb_side_nav').attr('aria-label', 'Quick Navigator');
@@ -148,9 +143,10 @@
   * Input field has no description
   */
 
-  /* A 4.1.2 - Error
+  /* A 4.1.2 Error
   * iFrame is missing a title
   */
+	/* $('#ba_yt_0').attr('title', "Youtube Video 1"); */
 
   /* A 4.1.2 - Error
   * Redundant WAI-ARIA attribute
