@@ -21,7 +21,6 @@
   * Image with no text alternative
   */
   /* CHANGE IN CONTENT IF POSSIBLE */
-  /*$('.header-content img').attr('alt', 'Guelph Cooperative Purchasing Group logo');*/
 
   /*****************************
   **        Adaptable         **
@@ -44,6 +43,8 @@
   * HTML is used to format content
   */
   $('iframe').removeAttr("frameborder");
+  $('iframe').removeAttr("align");
+  $('iframe').removeAttr("scrolling");
   $('img').removeAttr("align");
 
 
@@ -68,7 +69,7 @@
   * No top-level heading on the page - Warning
   */
   if ($("h1").length == 0) {
-    $("<h1 class='visually-hidden' role='complementary' aria-label='hidden title'> "+ $("h2").text() + " </h1>").insertAfter( "#main-header");
+    $("<h1 class='visually-hidden' role='complementary' aria-label='hidden title'> "+ $("h2").text() + " </h1>").insertAfter( "header");
   }
 
   /* A 1.3.1
