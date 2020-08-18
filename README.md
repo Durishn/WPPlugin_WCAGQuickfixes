@@ -6,7 +6,7 @@ This repository holds the code for WCAG Quickfixes, a Wordpress Plugin built to 
 - Add aria-label to WP admin bar
 - Add underline to all links within a paragraph
 - Move frameborders, aligns, and scrolling from structure to style
-- Replace <i> with italized spans
+- Replace `<i>` with italized spans
 - Add invisible top level heading to page equal to second level heading if one doesn't exist
 - Add aria-label to navigation and top level header not included in landmarks
 
