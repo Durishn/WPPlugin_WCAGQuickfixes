@@ -20,7 +20,7 @@ DIVI-based:
 To download this plugin for use in your WP instance - download the latest release of this theme and drop the zip into the `New Plugins` section of WordPress.
 
 ## Usage
-Once you have downloaded this plugin and activated it in your wordpress instance, you should see the fixes populated on your site. Included in this plugin is also [a list of commonly used site-specific fixes](https://github.com/Guelph-Digital-Service/gds-wcag-quickfixes/docs/example.md) that you can drop into the custom CSS, and JS settings of this plugin in WP.
+Once you have downloaded this plugin and activated it in your wordpress instance, you should see the fixes populated on your site. Included in this plugin is also [a list of commonly used site-specific fixes](https://github.com/Guelph-Digital-Service/gds-wcag-quickfixes/blob/master/docs/example.md) that you can drop into the custom CSS, and JS settings of this plugin in WP.
 
 Fixes that require site-specific targeting or elements (such as alt-text or landmarking) should be added within the respective WordPress Plugin Settings pages.
 
