@@ -10,11 +10,11 @@ Download the latest release of this theme and drop the zip into the `New Plugins
 Sites should be tested and checked thoroughly upon introducing this plugin. It is likely to be stable once placed, but I have found a plugin or two that it doesn't play nicely with. In these cases, make a pull request asking for a generalized fix to be removed. Removed generalized fixes will be listed in the bottom of this README - in the case that you want to update your plugin to retrieve new fixes, check the removed fixes as you may want to move some of them into your customized fixes section!
 
 ## Versioning
-We aim to use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/CityOfGuelph-Webservices/TwentyTwelve-CityOfGuelph/tags).
+We aim to use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Guelph-Digital-Service/gds-wcag-quickfixes/tags).
 
 ## Authors
 
-* **[Durish, Nic](https://github.com/Durishn)**
+* **[Durish, Nic](https://nicdurish.ca)**
 
 ## License
 Along with WordPress, this project is licensed under the GNU V3 General License - see the [LICENSE](LICENSE) file for details.
