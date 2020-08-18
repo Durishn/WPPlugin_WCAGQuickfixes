@@ -63,8 +63,8 @@ register_uninstall_hook( WCAGQF_FILE, 'css_uninstall' );
 function wcagqf_register_codemirror( $hook ) {
 	if ( wcagqf_wp_codemirror_available() ) {
 		wp_enqueue_code_editor( array( 'type' => 'text/html' ) );
-		wp_enqueue_script( 'wcagqf-editor-css', plugins_url( 'gds-wcag-quickfixes/includes/js/editorcss.js' ), array( 'jquery' ), '', true );
-    wp_enqueue_script( 'wcagqf-editor-js', plugins_url( 'gds-wcag-quickfixes/includes/js/editorjs.js' ), array( 'jquery' ), '20190307', true );
+		wp_enqueue_script( 'wcagqf-editor-css', plugins_url( 'gds-wcag-quickfixes/js/editorcss.js' ), array( 'jquery' ), '', true );
+    wp_enqueue_script( 'wcagqf-editor-js', plugins_url( 'gds-wcag-quickfixes/js/editorjs.js' ), array( 'jquery' ), '20190307', true );
 	}
 }
 add_action( 'admin_enqueue_scripts', 'wcagqf_register_codemirror' );

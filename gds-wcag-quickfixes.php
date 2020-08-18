@@ -27,9 +27,9 @@ define( 'WCAGQF_OPTION', 'wcagqf_settings' );
 * @since  1.0.0
 */
 if ( ! is_admin() ) {
-	require_once dirname( WCAGQF_FILE ) . '/includes/public.php';
+	require_once dirname( WCAGQF_FILE ) . '/partials/public.php';
 } elseif ( ! defined( 'DOING_AJAX' ) ) {
-	require_once dirname( WCAGQF_FILE ) . '/includes/admin.php';
+	require_once dirname( WCAGQF_FILE ) . '/partials/admin.php';
 }
 
 /**
@@ -39,8 +39,8 @@ if ( ! is_admin() ) {
 * @action wp_enqueue_scripts
 */
 function nd_adding_scripts_styles() {
-  wp_register_script('JSfixes', plugins_url('includes/js/wcagqf.js', __FILE__), array('jquery'),'1.0', true);
+  wp_register_script('JSfixes', plugins_url('js/wcagqf.js', __FILE__), array('jquery'),'1.0', true);
   wp_enqueue_script('JSfixes');
-  wp_enqueue_style( 'CSSfixes', plugins_url( 'includes/css/wcagqf.css', __FILE__ ), '', '1.0' );
+  wp_enqueue_style( 'CSSfixes', plugins_url( 'css/wcagqf.css', __FILE__ ), '', '1.0' );
 }
 add_action( 'wp_enqueue_scripts', 'nd_adding_scripts_styles', 198 );
